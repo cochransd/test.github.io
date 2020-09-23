@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    
+      .container {
+        display: grid;
+        border: 1px solid  red;
+        height: 100vh;
+        width: 100vw;
+        grid-template-areas:
+          "A B"
+          "C D";
+        grid-template-columns:150px auto;
+        grid-template-rows:400px auto;
+        transform: translate(-8px, -8px);
+        background-image: -webkit-linear-gradient(#7ea34f, #3a4f22);
+
+      }
+      .item-1 {
+        padding: 10px;
+        /*border: 0px solid lightskyblue;*/
+        border-bottom: 0px solid black;
+        grid-area: A;
+        border-right: 3px solid  rgb(255,215,0);
+      }
+
+      .item-2 {
+        background-image: url('TheMAster2.mp4');";
+        background-repeat: no-repeat;
+        background-size:cover;        background-position: center; 
+        border: 1px solid lightskyblue;
+        grid-area: B;
+      }
+
+      .item-3 {
+        /*border: 0px solid lightskyblue;*/
+        border-top: 0px solid black;
+        grid-area: C;
+        border-right: 3px solid  rgb(255,215,0);
+      }
+
+      .item-4 {
+        background: white;
+        /*border: 0px solid lightskyblue;*/
+        grid-area: D;
+      }
+
+      .centered {
+        padding-top: 165px;
+        text-align: center;
+        vertical-align: middle;
+        mix-blend-mode: screen;
+        font-weight: bold;
+      }
+
+      img {
+      width: 100%;
+      }
+
+      .button {
+        margin-top: 10px;
+        font-weight: bold;
+        ;
+        font-size: 13px;
+        width: 100%;
+        border-radius: 50px;
+        cursor: pointer;
+        border: 0px solid white;
+        background: #90B755;
+        position: relative;
+        padding: 0;
+        z-index: 2;
+
+
+        color: #fff;
+  /*For IE*/
+      /* background-color: #4caf50; Green background */
+      /* border: 1px solid green; Green border */
+      /* color: white; White text */
+      /* padding: 10px 3vw;Some padding */
+      /* cursor: pointer; Pointer/hand icon */
+      /* width: 100%; Set a width if needed */
+      /* display: block; Make the buttons appear below each other */
+      }
+
+      button > span {
+      display: inline-block;
+      padding: 8px 16px;
+      background: linear-gradient(45deg, #fff 50%, white 50%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      
+    }
+    button:after {
+      border-radius: 50px;
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(45deg, rgb(255,215,0) 50%, transparent 50%);
+      z-index: -2;
+    }
+
+    button > span,
+    button:after {
+      background-size: 300%;
+      background-position: 100%;
+      transition: 1s, font-size 0.2s;
+    }
+
+    button:hover > span,
+    button:hover:after {
+      background-position: 0;
+
+      color: orangeRed;
+      /*For IE*/
+    }
+  </style>
+</head>
+<body>
+      <div class="container">
+        <div class="item-1">
+          <img
+          src="https://saintthomasministry.com/wp-content/uploads/2020/01/Fun-Logo33.png"
+        />
+        <button class="button"><span>HOME</span></button>
+        <button class="button"><span>COURSES</span></button>
+        <button class="button"><span>TUITION</span></button>
+        <button class="button"><span>OUR BELIEFS</span></button>
+        <button class="button"><span>ABOUT US</span></button>
+        </div>
+
+        <div class="item-2">
+
+          <div class="centered"><span style="font-size:60px;background-color: rgb(233, 233, 233); padding-left: 10px;
+            padding-right: 10px;">WELCOME</span>
+            <br>
+            <span style="font-size:22px; color: white;">To Saint Thomas School of Ministry</span></div>
+
+        </div>
+
+        <div class="item-3"></div>
+        <div class="item-4"></div>
+      </div>
+</body>
+</html>
